@@ -20,3 +20,4 @@
 
 如果想要自己开发的话，请使用里面的`StartClient.bat`脚本启动游戏，否则coremod不会加载。
 
+发布页的Release中有成品
