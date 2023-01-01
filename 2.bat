@@ -1,0 +1,1 @@
+gradlew runClient -Dfml.coreMods.load=com.howxu.demo.CoreMod.DemoCore
