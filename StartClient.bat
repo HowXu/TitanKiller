@@ -1,0 +1,1 @@
+gradlew runClient -Dfml.coreMods.load=com.takaranoao.titankiller.Core.TKCore

@@ -1,0 +1,38 @@
+[16:38:25] [main/INFO]: Setting user: Player567
+[16:38:27] [Client thread/INFO]: LWJGL Version: 2.9.1
+[16:38:34] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loade[16:38:39] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:TitanKiller Mod
+[16:38:40] [Sound Library Loader/INFO]: Sound engine started
+[16:38:42] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[16:38:42] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[16:38:42] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:TitanKiller Mod
+[16:38:42] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[16:38:42] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[16:38:43] [Sound Library Loader/INFO]: Sound engine started
+[16:38:53] [Client thread/INFO]: Connecting to 192.168.220.1, 11288
+[16:39:15] [Client thread/INFO]: Stopping!
+] [Server thread/INFO]: Changing view distance to 12, from 10
+[16:38:43] [Server thread/INFO]: Player567[local:E:b1a7ec5a] logged in with entity id 4 at (-277.5, 1.0, 156.5)
+[16:38:43] [Server thread/INFO]: Player567 加入了游戏
+[16:38:44] [Server thread/INFO]: Player567 刚刚获得了 [打开物品栏] 成就！
+[16:38:44] [Client thread/INFO]: [CHAT] Player567 刚刚获得了 [打开物品栏] 成就！
+[16:38:48] [Server thread/INFO]: Saving and pausing game...
+[16:38:48] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[16:38:49] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[16:38:49] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[16:38:51] [Client thread/INFO]: Started on 11288
+[16:38:51] [Client thread/INFO]: [CHAT] 本地游戏已在端口 11288 上开启
+[16:38:56] [User Authenticator #1/WARN]: Failed to verify username but will let them in anyway!
+[16:38:56] [Server thread/INFO]: Player374[/192.168.220.1:11369] logged in with entity id 9 at (-264.5, 1.0, 167.5)
+[16:38:56] [Server thread/INFO]: Player374 加入了游戏
+[16:38:56] [Client thread/INFO]: [CHAT] Player374 加入了游戏
+[16:39:01] [Client thread/INFO]: [CHAT] Player374被Player567喂了猪
+[16:39:01] [Client thread/INFO]: [CHAT] Player374被Player567喂了猪
+[16:39:09] [Client thread/INFO]: [CHAT] Player374被Player567喂了猪
+[16:39:09] [Client thread/INFO]: [CHAT] Player374被Player567玩坏掉了
+[16:39:11] [Server thread/INFO]: Stopping server
+[16:39:11] [Server thread/INFO]: Saving players
+[16:39:11] [Server thread/INFO]: Saving worlds
+[16:39:11] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[16:39:11] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[16:39:11] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[16:39:12] [Client thread/INFO]: Stopping!

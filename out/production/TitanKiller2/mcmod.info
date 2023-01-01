@@ -1,0 +1,16 @@
+[
+{
+  "modid": "titankiller",
+  "name": "TitanKiller Mod",
+  "description": "A mod made by Takaranoao.",
+  "version": "2.0",
+  "mcversion": "1.7.10",
+  "url": "https://space.bilibili.com/20036042",
+  "updateUrl": "https://space.bilibili.com/20036042",
+  "authorList": ["Takaranoao"],
+  "credits": "BiliBili:https://space.bilibili.com/20036042",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
