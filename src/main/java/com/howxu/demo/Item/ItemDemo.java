@@ -38,7 +38,7 @@ public class ItemDemo extends ItemSword{
 
     public ItemDemo(ToolMaterial p_i45356_1_) {
         super(p_i45356_1_);
-        setUnlocalizedName("demo");
+        setUnlocalizedName("mydemosword");
         setCreativeTab(CreativeTabs.tabTools);
         setTextureName("minecraft:gold_sword");
     }
