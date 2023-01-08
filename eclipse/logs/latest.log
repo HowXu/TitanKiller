@@ -1,38 +1,43 @@
-[16:38:25] [main/INFO]: Setting user: Player567
-[16:38:27] [Client thread/INFO]: LWJGL Version: 2.9.1
-[16:38:34] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loade[16:38:39] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:TitanKiller Mod
-[16:38:40] [Sound Library Loader/INFO]: Sound engine started
-[16:38:42] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[16:38:42] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[16:38:42] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:TitanKiller Mod
-[16:38:42] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[16:38:42] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[16:38:43] [Sound Library Loader/INFO]: Sound engine started
-[16:38:53] [Client thread/INFO]: Connecting to 192.168.220.1, 11288
-[16:39:15] [Client thread/INFO]: Stopping!
-] [Server thread/INFO]: Changing view distance to 12, from 10
-[16:38:43] [Server thread/INFO]: Player567[local:E:b1a7ec5a] logged in with entity id 4 at (-277.5, 1.0, 156.5)
-[16:38:43] [Server thread/INFO]: Player567 加入了游戏
-[16:38:44] [Server thread/INFO]: Player567 刚刚获得了 [打开物品栏] 成就！
-[16:38:44] [Client thread/INFO]: [CHAT] Player567 刚刚获得了 [打开物品栏] 成就！
-[16:38:48] [Server thread/INFO]: Saving and pausing game...
-[16:38:48] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
-[16:38:49] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
-[16:38:49] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
-[16:38:51] [Client thread/INFO]: Started on 11288
-[16:38:51] [Client thread/INFO]: [CHAT] 本地游戏已在端口 11288 上开启
-[16:38:56] [User Authenticator #1/WARN]: Failed to verify username but will let them in anyway!
-[16:38:56] [Server thread/INFO]: Player374[/192.168.220.1:11369] logged in with entity id 9 at (-264.5, 1.0, 167.5)
-[16:38:56] [Server thread/INFO]: Player374 加入了游戏
-[16:38:56] [Client thread/INFO]: [CHAT] Player374 加入了游戏
-[16:39:01] [Client thread/INFO]: [CHAT] Player374被Player567喂了猪
-[16:39:01] [Client thread/INFO]: [CHAT] Player374被Player567喂了猪
-[16:39:09] [Client thread/INFO]: [CHAT] Player374被Player567喂了猪
-[16:39:09] [Client thread/INFO]: [CHAT] Player374被Player567玩坏掉了
-[16:39:11] [Server thread/INFO]: Stopping server
-[16:39:11] [Server thread/INFO]: Saving players
-[16:39:11] [Server thread/INFO]: Saving worlds
-[16:39:11] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
-[16:39:11] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
-[16:39:11] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
-[16:39:12] [Client thread/INFO]: Stopping!
+[20:46:43] [main/INFO]: Setting user: Player126
+[20:46:44] [Client thread/INFO]: LWJGL Version: 2.9.1
+[20:46:50] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:TitanKiller Mod
+[20:46:51] [Sound Library Loader/INFO]: Sound engine started
+[20:46:53] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[20:46:53] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[20:46:53] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:TitanKiller Mod
+[20:46:53] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[20:46:53] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[20:46:54] [Sound Library Loader/INFO]: Sound engine started
+[20:47:21] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[20:47:21] [Server thread/INFO]: Generating keypair
+[20:47:21] [Server thread/INFO]: Preparing start region for level 0
+[20:47:23] [Server thread/INFO]: Changing view distance to 12, from 10
+[20:47:24] [Server thread/INFO]: Player126[local:E:861e5100] logged in with entity id 15 at (-269.4372634443305, 1.0, 142.99853911531363)
+[20:47:24] [Server thread/INFO]: Player126 加入了游戏
+[20:47:24] [Server thread/INFO]: Saving and pausing game...
+[20:47:24] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[20:47:24] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[20:47:24] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[20:47:31] [Client thread/INFO]: Started on 12576
+[20:47:31] [Client thread/INFO]: [CHAT] 本地游戏已在端口 12576 上开启
+[20:47:43] [Server thread/WARN]: Skipping Entity with id RainbowLightningBolt
+[20:47:43] [Server thread/WARN]: Skipping Entity with id RainbowLightningBolt
+[20:47:51] [Server thread/INFO]: Player126 刚刚获得了 [打开物品栏] 成就！
+[20:47:51] [Client thread/INF[20:47:52] [Client thread/INFO]: Reloading ResourceMa[20:48:02] [User Authenticator #1/WARN]: Failed to verify username but will let them in anyway!
+[20:48:02] [Server thread/INFO]: Player562[/192.168.33.1:12669] logged in with entity id 1272 at (-263.5, 1.0, 154.5)
+[20:48:02] [Server thread/INFO]: Player562 加入了游戏
+[20:48:02] [Client thread/INFO]: [CHAT] Player562 加入了游戏
+[20:48:05] [Client thread/INFO]: [CHAT] Player562被Player126喂了猪
+[20:48:10] [Client thread/INFO]: [CHAT] Player562被Player126喂了猪
+[20:48:14] [Client thread/INFO]: [CHAT] Player562被Player126玩坏掉了
+[20:48:16] [Server thread/INFO]: Player562 lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[20:4[20:48:17] [Client thread/INFO]: Stopping!
+游戏
+[20:48:16] [Client thread/INFO]: [CHAT] Player562 退出了游戏
+[20:48:18] [Server thread/INFO]: Stopping server
+[20:48:18] [Server thread/INFO]: Saving players
+[20:48:18] [Server thread/INFO]: Saving worlds
+[20:48:18] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[20:48:18] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[20:48:18] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[20:48:18] [Client thread/INFO]: Stopping!

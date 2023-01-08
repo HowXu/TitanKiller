@@ -1,0 +1,24 @@
+[20:46:43] [main/INFO]: Setting user: Player126
+[20:46:44] [Client thread/INFO]: LWJGL Version: 2.9.1
+[20:46:50] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:TitanKiller Mod
+[20:46:51] [Sound Library Loader/INFO]: Sound engine started
+[20:46:53] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[20:46:53] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[20:46:53] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:TitanKiller Mod
+[20:46:53] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[20:46:53] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[20:46:54] [Sound Library Loader/INFO]: Sound engine started
+[20:47:21] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[20:47:21] [Server thread/INFO]: Generating keypair
+[20:47:21] [Server thread/INFO]: Preparing start region for level 0
+[20:47:23] [Server thread/INFO]: Changing view distance to 12, from 10
+[20:47:24] [Server thread/INFO]: Player126[local:E:861e5100] logged in with entity id 15 at (-269.4372634443305, 1.0, 142.99853911531363)
+[20:47:24] [Server thread/INFO]: Player126 加入了游戏
+[20:47:24] [Server thread/INFO]: Saving and pausing game...
+[20:47:24] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[20:47:24] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[20:47:24] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[20:47:31] [Client thread/INFO]: Started on 12576
+[20:47:31] [Client thread/INFO]: [CHAT] 本地游戏已在端口 12576 上开启
+[20:47:43] [Server thread/WARN]: Skipping Entity with id RainbowLightningBolt
+[20:47:43] [Server thread/WARN]: Skipping Entity with id RainbowLightningBolt

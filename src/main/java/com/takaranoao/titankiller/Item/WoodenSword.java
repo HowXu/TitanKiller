@@ -2,6 +2,7 @@ package com.takaranoao.titankiller.Item;
 
 import com.takaranoao.titankiller.Loader.ItemLoader;
 import com.takaranoao.titankiller.tools.EntityTool;
+import com.takaranoao.titankiller.tools.HealthKiller;
 import com.takaranoao.titankiller.tools.RainbowText;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.eventhandler.Event;
@@ -132,92 +133,9 @@ public class WoodenSword extends ItemSword {
         //EntityTool.LightingWhileHasTitans(p_77659_2_,p_77659_3_);真尼玛纱暖，一会要一会儿不要
         EntityTool.PickItems(p_77659_3_);
         //RemoveHealth(p_77659_1_,0,p_77659_3_);
-        RemoveTitanHealth(p_77659_1_,p_77659_3_);
-        RemoveEntityHealth(p_77659_1_,p_77659_3_);
+        HealthKiller.RemoveTitanHealth(p_77659_1_,p_77659_3_);
+        HealthKiller.RemoveEntityHealth(p_77659_1_,p_77659_3_);
         return super.onItemRightClick(p_77659_1_, p_77659_2_, p_77659_3_);
-    }
-
-    public void RemoveEntityHealth(ItemStack item, EntityPlayer player) {
-        Vec3 vec3 = player.getLook(1.0F);
-        double dx1 = vec3.xCoord * 4.0D;
-        double dy1 = player.getEyeHeight() + vec3.yCoord * 4.0D;
-        double dz1 = vec3.zCoord * 4.0D;
-        List<Entity> list11 = player.worldObj.getEntitiesWithinAABBExcludingEntity((Entity)player, player.boundingBox.expand(4.0D, 4.0D, 4.0D).offset(dx1, dy1, dz1));
-        if (list11 != null && !list11.isEmpty())
-        {
-            for (int i211 = 0; i211 < list11.size(); i211++) {
-                Entity entity1 = list11.get(i211);
-                if (entity1 != player && entity1 instanceof EntityLivingBase) {
-                    entity1.motionX = (-MathHelper.sin(entity1.rotationYaw * 3.1415927F / 180.0F) * 2.0F) + 1.0D;
-                    entity1.motionY = 3.0D;
-                    entity1.motionZ = (MathHelper.cos(entity1.rotationYaw * 3.1415927F / 180.0F) * 2.0F) + 1.0D;
-                    EntityTool.setHealth((EntityLivingBase)entity1,0.0F );//血量清空的部分,((EntityLivingBase)entity1).getHealth() / 4.0F
-                    if (entity1 instanceof EntityPlayer){
-                        EntityLivingBase target = (EntityLivingBase) entity1;
-                        String name = target.getCommandSenderName();
-                        String name1 = player.getCommandSenderName();
-                        Random random = new Random();
-                        int KillerInt = random.nextInt(2);
-                        String Killer;
-                        if (KillerInt == 0){
-                            Killer = "喂了猪";
-                        }else {
-                            Killer = "玩坏掉了";
-                        }
-                        EntityTool.ChatPrint(name + "被" + name1 + Killer);//这样写比较好，不用DamageSource
-
-                        if(i211 == list11.size()-1){
-                            EntityTool.HasPrinted = false;
-                            System.out.println("设置为true");
-                        }
-                       //attackedone.func_110142_aN().func_94547_a(new TKDamageSource((Entity)player), attackedone.getHealth(), attackedone.getHealth());//玩家死亡信息
-                        //entity1.attackEntityFrom(DamageSource.causeThornsDamage(player), 111110.0F);
-                    }
-                    //entity1.attackEntityFrom(DamageSource.causePlayerDamage(player), 111110.0F);//实体死亡信息
-
-                }
-            }
-
-        }
-        double dx = vec3.xCoord * 6.0D;
-        double dy = player.getEyeHeight() + vec3.yCoord * 6.0D;
-        double dz = vec3.zCoord * 6.0D;
-        List<Entity> list1 = player.worldObj.getEntitiesWithinAABBExcludingEntity((Entity)player, player.boundingBox.expand(6.0D, 6.0D, 6.0D).offset(dx, dy, dz));
-        if (list1 != null && !list1.isEmpty())
-        {
-            for (int i11 = 0; i11 < list1.size(); i11++) {
-                Entity entity1 = list1.get(i11);
-                if (entity1 != player && entity1 instanceof EntityLivingBase) {
-                    if (player.isSneaking()) {
-                        entity1.motionY++;
-                    }
-
-                    try {
-                        ReflectionHelper.findField(EntityLivingBase.class, new String[] { "recentlyHit", "field_70718_bc" }).setInt(entity1, 100);
-                    }
-                    catch (Exception exception) {}
-
-                    if (player.isSneaking() && entity1 instanceof EntityLivingBase) {
-                        EntityTool.setHealth((EntityLivingBase)entity1, 0.0F);
-                        if (entity1 instanceof EntityPlayer){
-                            EntityPlayer attackedone = (EntityPlayer) entity1;
-                            //attackedone.func_110142_aN().func_94547_a(new TKDamageSource((Entity)player), attackedone.getHealth(), attackedone.getHealth());
-                        }
-                        entity1.attackEntityFrom(DamageSource.causePlayerDamage(player), 11100.0F);
-                        ((EntityLivingBase)entity1).deathTime++;
-                        if (!(entity1 instanceof net.minecraft.entity.boss.EntityDragon) && ((EntityLivingBase)entity1).deathTime > 1) {
-
-                            ((EntityLivingBase)entity1).isDead = true;
-                            if (!entity1.isEntityAlive()) {
-                                ((EntityLivingBase)entity1).onDeath(DamageSource.magic);
-                                entity1.worldObj.setEntityState(entity1, (byte)3);
-                            }
-                        }
-                        ((EntityLivingBase)entity1).getDataWatcher().updateObject(6, Float.valueOf(MathHelper.clamp_float(((EntityLivingBase)entity1).getHealth() - 5000.0F, 0.0F, ((EntityLivingBase)entity1).getMaxHealth())));
-                    }
-                }
-            }
-        }
     }
 
 
@@ -314,7 +232,7 @@ public class WoodenSword extends ItemSword {
                     }else {
                         Killer = "玩坏掉了";
                     }
-                    EntityTool.ChatPrint(name + "被" + name1 + Killer);//这样写比较好，不用DamageSource
+                   // EntityTool.ChatPrint(name + "被" + name1 + Killer);//这样写比较好，不用DamageSource
                 }
             }
         }
@@ -325,47 +243,47 @@ public class WoodenSword extends ItemSword {
             player.removePotionEffect(potion.id);
         }
     }
-    private void RemoveTitanHealth(ItemStack item, EntityPlayer player) {
-        if (!Loader.isModLoaded("thetitans")) {
-            return;
-        }
 
-        List<Entity> entitylist = player.worldObj.loadedEntityList;
-        if (entitylist != null && !entitylist.isEmpty())
-        {
-            for (int i = 0; i < entitylist.size(); i++) {
 
-                Entity entity2 = entitylist.get(i);
-                if (entity2 instanceof EntityTitanSpirit)
-                {
-                    ((EntityTitanSpirit)entity2).setDead();
-                }
-            }
-        }
 
-        Vec3 vec3 = player.getLook(1.0F);
-        double dx = vec3.xCoord * 6.0D;
-        double dy = player.getEyeHeight() + vec3.yCoord * 6.0D;
-        double dz = vec3.zCoord * 6.0D;
-        List<Entity> list1 = player.worldObj.getEntitiesWithinAABBExcludingEntity((Entity)player, player.boundingBox.expand(6.0D, 6.0D, 6.0D).offset(dx, dy, dz));
-        if (list1 != null && !list1.isEmpty())
-        {
-            for (int i = 0; i < list1.size(); i++) {
 
-                Entity entity1 = list1.get(i);
-                if (entity1 != player && entity1 instanceof EntityLivingBase)
-                {
-                    if (!entity1.isDead && entity1 instanceof EntityTitan) {
 
-                        ((EntityTitan)entity1).setTitanHealth(0.0F); //((EntityTitan)entity1).getHealth() - ((EntityTitan)entity1).getHealth() / 2.0F
-                        entity1.attackEntityFrom(DamageSource.causePlayerDamage(player), 40.0F);
-                        if (((EntityTitan)entity1).getHealth() >= 0.0F)
-                        {
-                            ((EntityTitan)entity1).setTitanHealth(0.0F);
-                        }
-                    }
-                }
-            }
-        }
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

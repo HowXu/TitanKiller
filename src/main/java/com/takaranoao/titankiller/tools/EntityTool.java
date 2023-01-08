@@ -4,6 +4,8 @@ import com.takaranoao.titankiller.Entity.RainbowLightningBolt;
 import com.takaranoao.titankiller.Item.WoodenSword;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.relauncher.ReflectionHelper;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -23,8 +25,6 @@ import java.util.List;
 import java.util.Random;
 
 public class EntityTool {
-
-    public static  boolean HasPrinted = false;
 
     public static void LightingWhileHasTitans(World world,EntityPlayer player){
         List<Entity> allEntities = new ArrayList<Entity>(((Entity)player).worldObj.loadedEntityList);
@@ -224,21 +224,46 @@ public class EntityTool {
          entityLivingBase.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(-110.0D);
          entityLivingBase.setLastAttacker((Entity)entityPlayer);
     }
-    public static void ChatPrint(String message ) {
+    public static void ChatPrint(String message) {
         List list = getAllServerPlayers();
         Iterator var2 = list.iterator();
-        while(var2.hasNext() && !HasPrinted) {
+        while(var2.hasNext()) {
             EntityPlayer player = (EntityPlayer)var2.next();
-            player.addChatComponentMessage(Text(message));
-            HasPrinted = true;
+            player.addChatComponentMessage(KillText(message));
         }
 
     }
     public static List getAllServerPlayers() {
         return MinecraftServer.getServer().getConfigurationManager().playerEntityList;
     }
-    public static ChatComponentTranslation Text(String text) {
+    public static ChatComponentTranslation KillText(String text) {
         return new ChatComponentTranslation(text, new Object[0]);
+    }
+
+    public static void ChatClientOnly(EntityPlayer player,EntityPlayer MStarget){
+
+        String name = MStarget.getCommandSenderName();
+        String name1 = player.getCommandSenderName();
+        Random random = new Random();
+        int KillerInt = random.nextInt(2);
+        String Killer;
+        if (KillerInt == 0){
+            Killer = "喂了猪";
+        }else {
+            Killer = "玩坏掉了";
+        }
+        if(player.worldObj.isRemote){//添加这一判断实现仅在客户端输出
+        player.addChatComponentMessage(KillText(name + "被" + name1 + Killer));
+        MStarget.addChatComponentMessage(KillText(name + "被" + name1 + Killer));
+        System.out.println("Have Sout it for " + MStarget.getCommandSenderName());
+        System.out.println("Have sout it to " + player.getCommandSenderName());
+        }
+        //EntityTool.ChatPrint(name + "被" + name1 + Killer);
+        //这样写比较好，不用DamageSource
+
+        //attackedone.func_110142_aN().func_94547_a(new TKDamageSource((Entity)player), attackedone.getHealth(), attackedone.getHealth());//玩家死亡信息
+        //entity1.attackEntityFrom(DamageSource.causeThornsDamage(player), 111110.0F);
+
     }
 
 }
