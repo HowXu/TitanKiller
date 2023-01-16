@@ -26,17 +26,24 @@ import java.util.Random;
 
 public class EntityTool {
 
-    public static void LightingWhileHasTitans(World world,EntityPlayer player){
-        List<Entity> allEntities = new ArrayList<Entity>(((Entity)player).worldObj.loadedEntityList);
+    public static final boolean NoCondition = true;
+    public static boolean isLoadTitans = false;
 
-        for(int i = 0;i < allEntities.size();i++) {
-            if (Loader.isModLoaded("thetitans")) {
-                if (allEntities.get(i) instanceof EntityTitan) {
-                    RainbowLighting(world, player);
-                    System.out.println("杨值四");
-                } else {
-                    System.out.println("No sheep");
+    public static void LightingWorld(World world,EntityPlayer player){
+        Vec3 vec3 = player.getLook(1.0F);
+        double dx = vec3.xCoord * 6.0D;
+        double dy = player.getEyeHeight() + vec3.yCoord * 6.0D;
+        double dz = vec3.zCoord * 6.0D;
+        List<Entity> allEntities = player.worldObj.getEntitiesWithinAABBExcludingEntity((Entity)player, player.boundingBox.expand(150.0D, 150.0D, 150.0D).offset(dx, dy, dz));
+        //List<Entity> allEntities = new ArrayList<Entity>(((Entity)player).worldObj.loadedEntityList);
+        if(allEntities.size() != 0 && allEntities != null){
+            for (Entity aentity : allEntities) {
+                if (Loader.isModLoaded("thetitans")) {
+                    if(aentity instanceof EntityTitan) isLoadTitans = true;
                 }
+            }
+            if(NoCondition || isLoadTitans){
+                RainbowLighting(world,player);
             }
         }
     }
@@ -44,7 +51,6 @@ public class EntityTool {
     public static void RainbowLighting(World world,EntityPlayer player){
         Random random = new Random();
         for (int i = 0; i < 50; i++) {
-            System.out.println("雷电");
             double angle = random.nextDouble() * 20.0D * Math.PI;
             double distance = random.nextGaussian() * 100.0D;
             double x = Math.sin(angle) * distance + ((Entity)player).posX;

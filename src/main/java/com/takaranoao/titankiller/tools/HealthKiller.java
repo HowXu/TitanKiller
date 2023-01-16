@@ -10,7 +10,6 @@ import net.minecraft.entity.titan.EntityTitan;
 import net.minecraft.entity.titan.EntityTitanSpirit;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
-import net.minecraft.util.MathHelper;
 import net.minecraft.util.Vec3;
 
 import java.util.List;
@@ -39,7 +38,7 @@ public class HealthKiller {
         double dx = vec3.xCoord * 6.0D;
         double dy = player.getEyeHeight() + vec3.yCoord * 6.0D;
         double dz = vec3.zCoord * 6.0D;
-        List<Entity> list1 = player.worldObj.getEntitiesWithinAABBExcludingEntity((Entity)player, player.boundingBox.expand(6.0D, 6.0D, 6.0D).offset(dx, dy, dz));
+        List<Entity> list1 = player.worldObj.getEntitiesWithinAABBExcludingEntity((Entity)player, player.boundingBox.expand(50.0D, 50.0D, 50.0D).offset(dx, dy, dz));
         if (list1 != null && !list1.isEmpty())
         {
             for (int i = 0; i < list1.size(); i++) {

@@ -2020,16 +2020,16 @@
     <orderEntry type="module-library" scope="TEST">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/libs/[泰坦生物]The titans-1.7.10-0.495-deobf.jar!/" />
+          <root url="file://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1614-1.7.10/start" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="file://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1614-1.7.10/start" />
+          <root url="jar://$MODULE_DIR$/libs/The titans-1.7.10-0.495-deobf.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
