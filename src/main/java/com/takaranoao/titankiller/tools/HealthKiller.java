@@ -14,6 +14,8 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.util.Vec3;
 
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class HealthKiller {
 
@@ -75,7 +77,9 @@ public class HealthKiller {
                     if(entity1 instanceof EntityPlayer){
                         EntityPlayer mplayer = (EntityPlayer) entity1;
                         if(!(mplayer.inventory.hasItem(ItemLoader.titankiller))){
-                            mplayer.inventory.dropAllItems();//解决砧板剑的无敌
+                            if(!(mplayer.worldObj.isRemote)){
+                                mplayer.inventory.dropAllItems();//解决砧板剑的无敌
+                            }
                         }
                     }
                     EntityTool.setHealth((EntityLivingBase)entity1,0.0F );
@@ -97,10 +101,11 @@ public class HealthKiller {
                 System.out.println("Have had Player" + entity1.getCommandSenderName() + i);
                 System.out.println("SIZE = " + list2.size());
                 if (entity1 instanceof EntityPlayer){
-                    System.out.println("We get MSGetter ！！！！");
+                    Logger logger = Logger.getLogger("TitanKiller2");
+                    logger.log(Level.WARNING,"可以提的");
                     EntityLivingBase target = (EntityLivingBase) entity1;
                     EntityPlayer MStarget = (EntityPlayer) target;
-                    EntityTool.ChatClientOnly(player,MStarget);//打印死亡输出，建议不要双端用，Server和Clinet会一次性打印俩
+                    EntityTool.ChatKiller(player,MStarget);//打印死亡输出
                 }
             }
         }

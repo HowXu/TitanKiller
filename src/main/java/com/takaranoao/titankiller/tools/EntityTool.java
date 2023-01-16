@@ -240,7 +240,7 @@ public class EntityTool {
         return new ChatComponentTranslation(text, new Object[0]);
     }
 
-    public static void ChatClientOnly(EntityPlayer player,EntityPlayer MStarget){
+    public static void ChatKiller(EntityPlayer player,EntityPlayer MStarget){
 
         String name = MStarget.getCommandSenderName();
         String name1 = player.getCommandSenderName();
@@ -252,11 +252,9 @@ public class EntityTool {
         }else {
             Killer = "玩坏掉了";
         }
-        if(player.worldObj.isRemote){//添加这一判断实现仅在客户端输出
+        if(!player.worldObj.isRemote){//添加这一判断实现仅在客户端输出
         player.addChatComponentMessage(KillText(name + "被" + name1 + Killer));
         MStarget.addChatComponentMessage(KillText(name + "被" + name1 + Killer));
-        System.out.println("Have Sout it for " + MStarget.getCommandSenderName());
-        System.out.println("Have sout it to " + player.getCommandSenderName());
         }
         //EntityTool.ChatPrint(name + "被" + name1 + Killer);
         //这样写比较好，不用DamageSource

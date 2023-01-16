@@ -122,11 +122,13 @@ public class RefuseEvent {
             //this.know = 3;
         }
         if (player.getEntityData().getInteger("know") == 3) {
+            if(player.worldObj.isRemote){//设置单端监听
             player.addChatMessage((IChatComponent)new ChatComponentText("一个奇怪的力量要把木剑夺走，这时木剑上的牙印亮了一下，什么都没有发生"));
             //this.know = 0;
             player.getEntityData().setInteger("know",0);
             System.out.println("FAnsgjaidsqo"+player.getEntityData().getInteger("know"));
             }
+        }
         }
      }
     }
