@@ -17,6 +17,10 @@
   <component name="DependencyValidationManager">
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java/com/howxu/demo/Item/ItemDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mcmod.info" charset="GBK" />
+  </component>
   <component name="GradleUISettings">
     <setting name="root" />
   </component>

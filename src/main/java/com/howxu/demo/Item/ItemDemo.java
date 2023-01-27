@@ -2,7 +2,7 @@
  * @Author: HowXu howxu366@outlook.com
  * @Date: 2022-12-31 12:02:32
  * @LastEditors: HowXu howxu366@outlook.com
- * @LastEditTime: 2023-01-01 20:49:44
+ * @LastEditTime: 2023-01-27 12:01:20
  * @FilePath: \DemoCore\src\main\java\com\howxu\demo\Item\ItemDemo.java
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -21,6 +21,7 @@ import java.util.List;
 import com.howxu.demo.Event.AntiDisarm;
 import com.howxu.demo.Event.EventUtil;
 import com.howxu.demo.Event.Hello;
+import com.howxu.demo.Event.RegenUtil;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
@@ -70,7 +71,7 @@ public class ItemDemo extends ItemSword{
     @Override
     public String getItemStackDisplayName(ItemStack p_77653_1_) {
         // 这个方法可以把名字写死
-        return "DemoItem".trim();
+        return "你好".trim();
     }
 
     @Override
@@ -86,6 +87,9 @@ public class ItemDemo extends ItemSword{
 
     @Override
     public ItemStack onItemRightClick(ItemStack p_77659_1_, World p_77659_2_, EntityPlayer p_77659_3_) {
+
+        RegenUtil.Regen(p_77659_3_.worldObj, (int) p_77659_3_.posX, (int) p_77659_3_.posZ);//区块覆写
+
         //EventUtil.TimeStop = true;//右键时启动时间停止，但是我不推荐
 
 

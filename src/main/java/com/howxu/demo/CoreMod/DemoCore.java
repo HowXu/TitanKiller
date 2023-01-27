@@ -15,7 +15,7 @@ import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
 //创建核心mod
 public class DemoCore implements IFMLLoadingPlugin{
 
-  //  public static boolean Debug = false;
+    public static Boolean Debug = false;
 
     @Override
     public String[] getASMTransformerClass() {
@@ -37,7 +37,7 @@ public class DemoCore implements IFMLLoadingPlugin{
 
     @Override
     public void injectData(Map<String, Object> data) {
-       // Debug = (Boolean) data.get("runtimeDeobfscationEnabled");
+        Debug = (Boolean) data.get("runtimeDeobfscationEnabled");
         //确定是否为编译环境
     }
 

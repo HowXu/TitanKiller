@@ -359,3 +359,143 @@
 [20:43:15] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
 [20:43:15] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
 [20:43:15] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[02:10:00] [main/INFO] [GradleStart]: Extra: []
+[02:10:00] [main/INFO] [GradleStart]: Found and added coremod: com.howxu.demo.CoreMod.DemoCore
+[02:10:00] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/howxu/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --accessToken, {REDACTED}, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[02:10:00] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[02:10:00] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[02:10:00] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[02:10:00] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[02:11:16] [main/INFO] [GradleStart]: Extra: []
+[02:11:16] [main/INFO] [GradleStart]: Found and added coremod: com.howxu.demo.CoreMod.DemoCore
+[02:11:16] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/howxu/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --accessToken, {REDACTED}, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[02:11:16] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[02:11:16] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[02:11:16] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[02:11:16] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[02:12:29] [main/INFO] [GradleStart]: Extra: []
+[02:12:29] [main/INFO] [GradleStart]: Found and added coremod: com.howxu.demo.CoreMod.DemoCore
+[02:12:29] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/howxu/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --accessToken, {REDACTED}, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[02:12:29] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[02:12:29] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[02:12:29] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[02:12:29] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[02:13:35] [main/INFO] [GradleStart]: Extra: []
+[02:13:35] [main/INFO] [GradleStart]: Found and added coremod: com.howxu.demo.CoreMod.DemoCore
+[02:13:35] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/howxu/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --accessToken, {REDACTED}, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[02:13:35] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[02:13:35] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[02:13:35] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[02:13:35] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[02:16:23] [main/INFO] [GradleStart]: Extra: []
+[02:16:23] [main/INFO] [GradleStart]: Found and added coremod: com.howxu.demo.CoreMod.DemoCore
+[02:16:23] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/howxu/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --accessToken, {REDACTED}, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[02:16:23] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[02:16:23] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[02:16:23] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[02:16:23] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[02:17:02] [main/INFO] [GradleStart]: Extra: []
+[02:17:02] [main/INFO] [GradleStart]: Found and added coremod: com.howxu.demo.CoreMod.DemoCore
+[02:17:02] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/howxu/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --accessToken, {REDACTED}, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[02:17:02] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[02:17:02] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[02:17:02] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[02:17:02] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[16:57:05] [main/INFO] [GradleStart]: Extra: []
+[16:57:05] [main/INFO] [GradleStart]: Found and added coremod: com.howxu.demo.CoreMod.DemoCore
+[16:57:05] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/howxu/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --accessToken, {REDACTED}, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[16:57:05] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[16:57:05] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[16:57:05] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[16:57:05] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[17:25:26] [main/INFO] [GradleStart]: Extra: []
+[17:25:26] [main/INFO] [GradleStart]: Found and added coremod: com.howxu.demo.CoreMod.DemoCore
+[17:25:26] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/howxu/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --accessToken, {REDACTED}, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[17:25:26] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[17:25:26] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[17:25:26] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[17:25:26] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[17:29:40] [main/INFO] [GradleStart]: Extra: []
+[17:29:40] [main/INFO] [GradleStart]: Found and added coremod: com.howxu.demo.CoreMod.DemoCore
+[17:29:40] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/howxu/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --accessToken, {REDACTED}, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[17:29:40] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[17:29:40] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[17:29:40] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[17:29:40] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[17:33:01] [main/INFO] [GradleStart]: Extra: []
+[17:33:01] [main/INFO] [GradleStart]: Found and added coremod: com.howxu.demo.CoreMod.DemoCore
+[17:33:01] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/howxu/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --accessToken, {REDACTED}, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[17:33:01] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[17:33:01] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[17:33:01] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[17:33:01] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[12:02:00] [main/INFO] [GradleStart]: Extra: []
+[12:02:00] [main/INFO] [GradleStart]: Found and added coremod: com.howxu.demo.CoreMod.DemoCore
+[12:02:00] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/howxu/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --accessToken, {REDACTED}, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[12:02:00] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[12:02:00] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[12:02:00] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[12:02:00] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[12:06:37] [main/INFO] [GradleStart]: Extra: []
+[12:06:37] [main/INFO] [GradleStart]: Found and added coremod: com.howxu.demo.CoreMod.DemoCore
+[12:06:37] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/howxu/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --accessToken, {REDACTED}, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[12:06:37] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[12:06:37] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[12:06:37] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[12:06:37] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[12:13:17] [main/INFO] [GradleStart]: Extra: []
+[12:13:17] [main/INFO] [GradleStart]: Found and added coremod: com.howxu.demo.CoreMod.DemoCore
+[12:13:17] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/howxu/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --accessToken, {REDACTED}, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[12:13:17] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[12:13:17] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[12:13:17] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[12:13:17] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[12:56:37] [main/INFO] [GradleStart]: Extra: []
+[12:56:37] [main/INFO] [GradleStart]: Found and added coremod: com.howxu.demo.CoreMod.DemoCore
+[12:56:37] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/howxu/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --accessToken, {REDACTED}, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[12:56:37] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[12:56:37] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[12:56:37] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[12:56:37] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[13:03:10] [main/INFO] [GradleStart]: Extra: []
+[13:03:10] [main/INFO] [GradleStart]: Found and added coremod: com.howxu.demo.CoreMod.DemoCore
+[13:03:10] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/howxu/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --accessToken, {REDACTED}, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[13:03:10] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[13:03:11] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[13:03:11] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[13:03:11] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[13:05:53] [main/INFO] [GradleStart]: Extra: []
+[13:05:53] [main/INFO] [GradleStart]: Found and added coremod: com.howxu.demo.CoreMod.DemoCore
+[13:05:53] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/howxu/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --accessToken, {REDACTED}, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[13:05:53] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[13:05:53] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[13:05:53] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[13:05:53] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[13:06:21] [main/INFO] [GradleStart]: Extra: []
+[13:06:21] [main/INFO] [GradleStart]: Found and added coremod: com.howxu.demo.CoreMod.DemoCore
+[13:06:21] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/howxu/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --accessToken, {REDACTED}, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[13:06:21] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[13:06:21] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[13:06:21] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[13:06:21] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[14:03:03] [main/INFO] [GradleStart]: Extra: []
+[14:03:03] [main/INFO] [GradleStart]: Found and added coremod: com.howxu.demo.CoreMod.DemoCore
+[14:03:03] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/howxu/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --accessToken, {REDACTED}, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[14:03:03] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[14:03:03] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[14:03:03] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[14:03:03] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[14:10:05] [main/INFO] [GradleStart]: Extra: []
+[14:10:05] [main/INFO] [GradleStart]: Found and added coremod: com.howxu.demo.CoreMod.DemoCore
+[14:10:05] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/howxu/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --accessToken, {REDACTED}, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[14:10:05] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[14:10:05] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[14:10:05] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[14:10:05] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[14:19:31] [main/INFO] [GradleStart]: Extra: []
+[14:19:31] [main/INFO] [GradleStart]: Found and added coremod: com.howxu.demo.CoreMod.DemoCore
+[14:19:31] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/howxu/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --accessToken, {REDACTED}, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[14:19:31] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[14:19:31] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[14:19:31] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[14:19:31] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker

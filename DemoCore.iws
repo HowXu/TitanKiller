@@ -7,7 +7,30 @@
     <list default="true" id="fa847cfc-c19c-4284-806c-91c348889a39" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/DemoCore.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/DemoCore.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DemoCore.iws" beforeDir="false" afterPath="$PROJECT_DIR$/DemoCore.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/config/splash.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/config/splash.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/2023-01-01-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/2023-01-01-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/2023-01-01-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/2023-01-01-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/2023-01-01-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/2023-01-01-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/2023-01-01-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/2023-01-01-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/2023-01-01-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/2023-01-01-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/2023-01-01-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/2023-01-01-6.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/2023-01-01-7.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/2023-01-01-7.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-1.log" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-2.log" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-3.log" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-3.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/fml-junk-earlystartup.log" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/fml-junk-earlystartup.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/saves/新的世界/DIM-1/data/villages.dat" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/新的世界/DIM-1/data/villages.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/saves/新的世界/DIM1/data/villages.dat" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/新的世界/DIM1/data/villages.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/saves/新的世界/data/villages.dat" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/新的世界/data/villages.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/saves/新的世界/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/新的世界/level.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/saves/新的世界/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/新的世界/level.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/saves/新的世界/region/r.2.-2.mca" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/新的世界/region/r.2.-2.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/saves/新的世界/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/saves/新的世界/session.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse/usernamecache.json" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse/usernamecache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/howxu/demo/Item/ItemDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/howxu/demo/Item/ItemDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mcmod.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mcmod.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,18 +100,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="应用程序.Minecraft Client">
     <configuration default="true" factoryName="Applet" type="Applet">
       <module name="" />
@@ -189,6 +213,7 @@
       <workItem from="1672453669279" duration="602000" />
       <workItem from="1672579866813" duration="439000" />
       <workItem from="1673176703948" duration="626000" />
+      <workItem from="1673201377143" duration="760000" />
     </task>
     <servers />
   </component>

@@ -2,7 +2,7 @@
  * @Author: HowXu howxu366@outlook.com
  * @Date: 2023-01-01 10:35:06
  * @LastEditors: HowXu howxu366@outlook.com
- * @LastEditTime: 2023-01-01 19:31:42
+ * @LastEditTime: 2023-01-27 12:40:43
  * @FilePath: \DemoCore\src\main\java\com\howxu\demo\Event\EventHandler.java
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -17,6 +17,8 @@ import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent;
 
 public class EventHandler {
+//设置一个判断来实现事件选择,可以把赋值绑定到Item的使用上
+    public static boolean AntiEvent = false;
 
     @SubscribeEvent//实体攻击事件
     public void onLivingAttack(LivingAttackEvent event){
@@ -50,6 +52,14 @@ public class EventHandler {
                     player.inventory.addItemStackToInventory(new ItemStack(com.howxu.demo.Main.DemoItem));
                     //好低级的防缴械
                 }
+            }else{
+                if(EventUtil.TimeStop){
+                    event.setCanceled(true);
+                }
+            }
+        }else{
+            if(EventUtil.TimeStop){
+                event.setCanceled(true);
             }
         }
     }
