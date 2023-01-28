@@ -1,0 +1,60 @@
+[15:23:07] [main/INFO]: Setting user: Player332
+[15:23:08] [Client thread/INFO]: LWJGL Version: 2.9.1
+[15:23:15] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:infinity
+[15:23:16] [Sound Library Loader/INFO]: Sound engine started
+[15:23:17] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[15:23:17] [Client thread/WARN]: Failed to load texture: minecraft:textures/atlas/items.png
+java.io.FileNotFoundException: minecraft:textures/atlas/items.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:35) ~[SimpleTexture.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:45) [TextureManager.class:?]
+	at com.howxu.infinitysword.Render.InfinityRender.CosmicRenderUtil.bindItemTexture(CosmicRenderUtil.java:97) [CosmicRenderUtil.class:?]
+	at com.howxu.infinitysword.Event.InfinityRenderEvent.weMadeAQuilt(InfinityRenderEvent.java:68) [InfinityRenderEvent.class:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_10_InfinityRenderEvent_weMadeAQuilt_Post.invoke(.dynamic) [?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54) [ASMEventHandler.class:?]
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:140) [EventBus.class:?]
+	at net.minecraftforge.client.ForgeHooksClient.onTextureStitchedPost(ForgeHooksClient.java:276) [ForgeHooksClient.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:312) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:98) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTickableTexture(TextureManager.java:71) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTextureMap(TextureManager.java:58) [TextureManager.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:590) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:942) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_351]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_351]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_351]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_351]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
+	at GradleStart.main(Unknown Source) [start/:?]
+[15:23:17] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[15:23:17] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:infinity
+[15:23:17] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[15:23:17] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[15:23:18] [Sound Library Loader/INFO]: Sound engine started
+[15:23:28] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[15:23:28] [Server thread/INFO]: Generating keypair
+[15:23:28] [Server thread/INFO]: Preparing start region for level 0
+[15:23:29] [Server thread/INFO]: Changing view distance to 12, from 10
+[15:23:30] [Server thread/INFO]: Player332[local:E:737bfd9a] logged in with entity id 361 at (-198.51802022219167, 73.0, 240.51667926158734)
+[15:23:30] [Server thread/INFO]: Player332 joined the game
+[15:23:33] [Server thread/INFO]: Saving and pausing game...
+[15:23:33] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[15:23:33] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[15:23:33] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[15:23:36] [Server thread/INFO]: Saving and pausing game...
+[15:23:36] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[15:23:36] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[15:23:36] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[15:23:36] [Server thread/INFO]: Stopping server
+[15:23:36] [Server thread/INFO]: Saving players
+[15:23:36] [Server thread/INFO]: Saving worlds
+[15:23:36] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[15:23:36] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[15:23:36] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[15:23:37] [Client thread/INFO]: Stopping!
