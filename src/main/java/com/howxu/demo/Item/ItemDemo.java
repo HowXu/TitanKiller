@@ -2,7 +2,7 @@
  * @Author: HowXu howxu366@outlook.com
  * @Date: 2022-12-31 12:02:32
  * @LastEditors: HowXu howxu366@outlook.com
- * @LastEditTime: 2023-01-27 12:01:20
+ * @LastEditTime: 2023-07-17 10:40:23
  * @FilePath: \DemoCore\src\main\java\com\howxu\demo\Item\ItemDemo.java
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -95,9 +95,9 @@ public class ItemDemo extends ItemSword{
 
         //右键时监听，为true改为false，为false改为true
         if(EventUtil.TimeStop){
-            //EventUtil.TimeStop = false;
+            EventUtil.TimeStop = false;
         }else if(!EventUtil.TimeStop){
-            //EventUtil.TimeStop = true;
+            EventUtil.TimeStop = true;
         }
         //时停和黑白渲染慎用，win11真的是垃圾
 

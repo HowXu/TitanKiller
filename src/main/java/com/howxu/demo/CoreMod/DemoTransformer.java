@@ -134,7 +134,7 @@ public class DemoTransformer implements IClassTransformer {
                         Label end = new Label();
                         mv.visitLabel(end);
                         mv.visitLocalVariable("this", "Lcpw/mods/fml/common/eventhandler/EventBus;" ,null, start, end, 0);
-                        mv.visitLocalVariable("this", "Lcpw/mods/fml/common/eventhandler/Event;" ,null, start, end, 0);
+                        mv.visitLocalVariable("this", "Lcpw/mods/fml/common/eventhandler/Event;" ,null, start, end, 1);
                         mv.visitEnd();
                         return null;//把返回值掐掉、
                     }
@@ -210,7 +210,7 @@ public class DemoTransformer implements IClassTransformer {
         
                             //然后写一个类来承接这个Class动态改写，把EntityLivingBase的getHealth方法写成EventUtil里的getHealth
                             methodvisitor.visitVarInsn(Opcodes.ALOAD, 0);//分别是参数类型和位置，是修改后的函数的参数
-                            methodvisitor.visitMethodInsn(Opcodes.INVOKESTATIC, "com/howxu/demo/Event/EventUtil", "tick2"/*把方法修改了 */, "(Lnet/minecraft/server/MinecraftServer;)F"/*函数签名一致，并在其中指定参数 */, false);
+                            methodvisitor.visitMethodInsn(Opcodes.INVOKESTATIC, "com/howxu/demo/Event/EventUtil", "tick2"/*把方法修改了 */, "(Lnet/minecraft/server/MinecraftServer;)V"/*函数签名一致，并在其中指定参数 */, false);
                             methodvisitor.visitInsn(Opcodes.RETURN);//指定返回值为float
         
                             //

@@ -1,2 +1,60 @@
-[14:19:34] [main/INFO]: Setting user: Player894
-[14:19:36] [Client thread/INFO]: LWJGL Version: 2.9.1
+[10:40:30] [main/INFO]: Setting user: Player86
+[10:40:31] [Client thread/INFO]: LWJGL Version: 2.9.1
+[10:40:37] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Demo
+[10:40:38] [Sound Library Loader/INFO]: Sound engine started
+[10:40:39] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[10:40:39] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[10:40:39] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Demo
+[10:40:39] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[10:40:40] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[10:40:40] [Sound Library Loader/INFO]: Sound engine started
+[10:40:43] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[10:40:43] [Server thread/INFO]: Generating keypair
+[10:40:43] [Server thread/INFO]: Preparing start region for level 0
+[10:40:44] [Server thread/INFO]: Changing view distance to 12, from 10
+[10:40:44] [Server thread/INFO]: Player86[local:E:0aafdf24] logged in with entity id 2878 at (11.552112502029551, 65.0, -193.1244199821778)
+[10:40:44] [Server thread/INFO]: Player86 加入了游戏
+[10:40:55] [Server thread/INFO]: Saving and pausing game...
+[10:40:55] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[10:40:55] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[10:40:55] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[10:41:05] [Server thread/INFO]: Saving and pausing game...
+[10:41:05] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[10:41:05] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[10:41:05] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[10:41:08] [Server thread/INFO]: Saving and pausing game...
+[10:41:08] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[10:41:08] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[10:41:08] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[10:41:10] [Server thread/INFO]: Saving and pausing game...
+[10:41:10] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[10:41:10] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[10:41:10] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[10:41:15] [Server thread/INFO]: Saving and pausing game...
+[10:41:15] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[10:41:15] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[10:41:15] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[10:41:17] [Server thread/INFO]: Saving and pausing game...
+[10:41:17] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[10:41:17] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[10:41:17] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[10:43:06] [Server thread/INFO]: Saving and pausing game...
+[10:43:06] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[10:43:06] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[10:43:06] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[10:43:19] [Server thread/INFO]: Saving and pausing game...
+[10:43:19] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[10:43:19] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[10:43:19] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[10:43:22] [Client thread/INFO]: Warning: Clientside chunk ticking took 123 ms
+[10:43:24] [Server thread/INFO]: Saving and pausing game...
+[10:43:24] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[10:43:24] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[10:43:24] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[10:43:32] [Server thread/INFO]: Stopping server
+[10:43:32] [Server thread/INFO]: Saving players
+[10:43:32] [Server thread/INFO]: Saving worlds
+[10:43:32] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[10:43:32] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[10:43:32] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[10:43:33] [Client thread/INFO]: Stopping!

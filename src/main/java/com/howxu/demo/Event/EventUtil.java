@@ -2,7 +2,7 @@
  * @Author: HowXu howxu366@outlook.com
  * @Date: 2022-12-31 11:26:24
  * @LastEditors: HowXu howxu366@outlook.com
- * @LastEditTime: 2023-01-27 15:03:14
+ * @LastEditTime: 2023-07-17 10:38:36
  * @FilePath: \DemoCore\src\main\java\com\howxu\demo\Event\EventUtil.java
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -87,7 +87,9 @@ public class EventUtil {
             if (entity instanceof EntityPlayer){
                 EntityPlayer player = (EntityPlayer) entity;
                 if(HasItemDemo(player)){
-                    player.worldObj.updateEntity(player);
+                    //player.worldObj.updateEntity(player);这个方法更新太慢了
+                    player.onUpdate();//这个方法不会卡顿
+                    //
                     }
                 }
             }
@@ -156,7 +158,7 @@ public class EventUtil {
                         EntityPlayer player = (EntityPlayer) entity;
                         if(HasItemDemo(player)){
                             player.worldObj.updateEntity(player);//同样的更新实体
-                            }
+                        }
                         }
                     }
             }
