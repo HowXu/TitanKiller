@@ -18,6 +18,4 @@
 
 实现功能的地方都有注解，因为是Coremod，所以gradle需要配置一下
 
-如果想要自己开发的话，请使用里面的`StartClient.bat`脚本启动游戏，否则coremod不会加载。
-
 发布页的Release中有成品
