@@ -14,8 +14,8 @@ import net.minecraft.util.ResourceLocation;
 
 public class WhiteBlackRender {
 
-    public static final ResourceLocation location = new ResourceLocation("shaders/post/desaturate.json");//渲染使用的json文件
-    //黑白渲染,这个是线程更改，必须用try
+    public static final ResourceLocation location = new ResourceLocation("shaders/post/desaturate.json");//渲染使用的json文件 在原版Minecraft就有
+    //黑白渲染,这个涉及线程操作，必须用try
     public static void BlackAndWhiteScreen(Boolean Switch){
 
         try {
