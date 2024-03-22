@@ -6,6 +6,7 @@ import com.takaranoao.titankiller.tools.HealthKiller;
 import com.takaranoao.titankiller.tools.RainbowText;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.eventhandler.Event;
+import cpw.mods.fml.common.eventhandler.EventBus;
 import cpw.mods.fml.relauncher.ReflectionHelper;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
@@ -130,11 +131,11 @@ public class WoodenSword extends ItemSword {
 
     @Override
     public ItemStack onItemRightClick(ItemStack p_77659_1_, World p_77659_2_, EntityPlayer p_77659_3_) {
-        //EntityTool.LightingWorld(p_77659_2_,p_77659_3_);
+        //EntityTool.LightingWorld(p_77659_2_,p_77659_3_);我真是擦四你吗了一会要一会儿不要
         EntityTool.PickItems(p_77659_3_);
-        //RemoveHealth(p_77659_1_,0,p_77659_3_);
+        //RemoveHealth(p_77659_1_,0,p_77659_3_);氧 氢 镁 你美死啦n_n
         HealthKiller.RemoveTitanHealth(p_77659_1_,p_77659_3_);
-        HealthKiller.RemoveEntityHealth(p_77659_1_,p_77659_3_);
+        //HealthKiller.RemoveEntityHealth(p_77659_1_,p_77659_3_);
         return super.onItemRightClick(p_77659_1_, p_77659_2_, p_77659_3_);
     }
 
@@ -244,46 +245,8 @@ public class WoodenSword extends ItemSword {
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @Override
+    public boolean hasEffect(ItemStack par1ItemStack, int pass) {
+        return super.hasEffect(par1ItemStack, pass);
+    }
 }

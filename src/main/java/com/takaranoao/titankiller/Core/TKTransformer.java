@@ -9,7 +9,8 @@ import org.objectweb.asm.tree.*;
  public class TKTransformer implements IClassTransformer
  {
    public byte[] transform(String name, String transformedName, byte[] basicClass) {
-     if ("net.minecraft.entity.titan.EntityWitherzilla".equals(transformedName)) {
+
+if ("net.minecraft.entity.titan.EntityWitherzilla".equals(transformedName)) {
        ClassNode craft = getClassNode(basicClass);
        label94: for (MethodNode methodNode : craft.methods) {
          System.out.println(methodNode.name + methodNode.desc);
@@ -38,7 +39,11 @@ import org.objectweb.asm.tree.*;
          }
        }
        return getBytecode(craft);
-     }  if ("net.minecraft.entity.titan.EntityTitan".equals(transformedName)) {
+     }
+
+
+
+if ("net.minecraft.entity.titan.EntityTitan".equals(transformedName)) {
        ClassNode craft = getClassNode(basicClass);
        label92: for (MethodNode methodNode : craft.methods) {
          System.out.println(methodNode.name + methodNode.desc);
@@ -55,7 +60,9 @@ import org.objectweb.asm.tree.*;
             return getBytecode(craft);
 
     }
-     if ("net.minecraft.network.NetHandlerPlayServer".equals(transformedName)) {
+
+     /*
+if ("net.minecraft.network.NetHandlerPlayServer".equals(transformedName)) {
       ClassNode craft = getClassNode(basicClass);
       label93: for (MethodNode methodNode : craft.methods) {
 
@@ -72,6 +79,7 @@ import org.objectweb.asm.tree.*;
       }
       return getBytecode(craft);
     }
+     */
     return basicClass;
   }
 

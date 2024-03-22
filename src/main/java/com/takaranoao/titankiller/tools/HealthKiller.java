@@ -12,6 +12,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.Vec3;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -38,7 +39,9 @@ public class HealthKiller {
         double dx = vec3.xCoord * 6.0D;
         double dy = player.getEyeHeight() + vec3.yCoord * 6.0D;
         double dz = vec3.zCoord * 6.0D;
-        List<Entity> list1 = player.worldObj.getEntitiesWithinAABBExcludingEntity((Entity)player, player.boundingBox.expand(50.0D, 50.0D, 50.0D).offset(dx, dy, dz));
+        List<Entity> list3 = player.worldObj.getEntitiesWithinAABBExcludingEntity((Entity)player, player.boundingBox.expand(50.0D, 50.0D, 50.0D).offset(dx, dy, dz));
+
+        List<Entity> list1 = new ArrayList<Entity>(player.worldObj.loadedEntityList);
         if (list1 != null && !list1.isEmpty())
         {
             for (int i = 0; i < list1.size(); i++) {
@@ -46,7 +49,8 @@ public class HealthKiller {
                 if (entity1 != player && entity1 instanceof EntityLivingBase)
                 {
                     if (!entity1.isDead && entity1 instanceof EntityTitan) {
-                        ((EntityTitan)entity1).setTitanHealth(0.0F); //((EntityTitan)entity1).getHealth() - ((EntityTitan)entity1).getHealth() / 2.0F
+                        ((EntityTitan)entity1).setTitanHealth(0.0F);
+                        // ((EntityTitan)entity1).getHealth() - ((EntityTitan)entity1).getHealth() / 2.0F
                         entity1.attackEntityFrom(DamageSource.causePlayerDamage(player), 40.0F);
                         if (((EntityTitan)entity1).getHealth() >= 0.0F)
                         {
