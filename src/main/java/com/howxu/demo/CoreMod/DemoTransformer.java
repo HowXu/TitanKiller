@@ -143,12 +143,7 @@ public class DemoTransformer implements IClassTransformer {
                         Label end = new Label();
                         mv.visitLabel(end);
                         mv.visitLocalVariable("this", "Lcpw/mods/fml/common/eventhandler/EventBus;" ,null, start, end, 0);
-<<<<<<< HEAD
                         mv.visitLocalVariable("this", "Lcpw/mods/fml/common/eventhandler/Event;" ,null, start, end, 1); //这里要对应上面的visitVarInsn
-=======
-                        mv.visitLocalVariable("this", "Lcpw/mods/fml/common/eventhandler/Event;" ,null, start, end, 1);
-                        //这里的参数位置也要对应上面的0,1
->>>>>>> 139bd9039f51705139cd974dfe5cad8e97ab34f6
                         mv.visitEnd();
                         return null;//把返回值掐掉
                     }
