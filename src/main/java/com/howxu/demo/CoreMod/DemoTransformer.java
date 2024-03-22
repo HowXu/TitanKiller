@@ -76,6 +76,9 @@ public class DemoTransformer implements IClassTransformer {
                         return super.visitField(access, name, desc, signature, value);
                     }
 
+
+
+
                     @Override
                     public MethodVisitor visitMethod(int access, String name, String desc, String signature,String[] exceptions) {
                         //通过这个方法给rungameLoop开头加上一串
@@ -89,6 +92,7 @@ public class DemoTransformer implements IClassTransformer {
                                 }
                             };
                         
+
                         }
 
 
@@ -104,6 +108,7 @@ public class DemoTransformer implements IClassTransformer {
                             mv.visitLocalVariable("this", "Lnet/minecraft/client/Minecraft;", null, start, end, 0);
                             mv.visitEnd(); */
 
+
                         return super.visitMethod(access, name, desc, signature, exceptions);
                     }
                 };
@@ -111,6 +116,10 @@ public class DemoTransformer implements IClassTransformer {
                     reader.accept(visitor, Opcodes.ASM4);
                     return writer.toByteArray();
             }//上一个if结束位置
+
+
+
+            
 
 
             //直接动态改写forge的事件注册，完全可以拦截所有不想要的事件
@@ -134,9 +143,9 @@ public class DemoTransformer implements IClassTransformer {
                         Label end = new Label();
                         mv.visitLabel(end);
                         mv.visitLocalVariable("this", "Lcpw/mods/fml/common/eventhandler/EventBus;" ,null, start, end, 0);
-                        mv.visitLocalVariable("this", "Lcpw/mods/fml/common/eventhandler/Event;" ,null, start, end, 1);
+                        mv.visitLocalVariable("this", "Lcpw/mods/fml/common/eventhandler/Event;" ,null, start, end, 1); //这里要对应上面的visitVarInsn
                         mv.visitEnd();
-                        return null;//把返回值掐掉、
+                        return null;//把返回值掐掉
                     }
                     return super.visitMethod(access, name, desc, signature, exceptions);
                 }
