@@ -5,8 +5,8 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;
 
 
- public class RainbowLightningBolt
-   extends Entity {
+ public class RainbowLightningBolt extends Entity {
+   //完全仿照原版
    public long boltVertex;
    private int boltLivingTime;
    private byte lightningState;

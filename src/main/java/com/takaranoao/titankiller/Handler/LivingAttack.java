@@ -16,6 +16,7 @@ import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 
 public class LivingAttack {
+    //一些实现无敌的事件监听
 
     @SubscribeEvent
     public void onTick(TickEvent.PlayerTickEvent event){

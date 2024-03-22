@@ -44,6 +44,7 @@ if ("net.minecraft.entity.titan.EntityWitherzilla".equals(transformedName)) {
 
 
 if ("net.minecraft.entity.titan.EntityTitan".equals(transformedName)) {
+    //改写Titan生物类让秒杀成为可能
        ClassNode craft = getClassNode(basicClass);
        label92: for (MethodNode methodNode : craft.methods) {
          System.out.println(methodNode.name + methodNode.desc);
@@ -61,11 +62,11 @@ if ("net.minecraft.entity.titan.EntityTitan".equals(transformedName)) {
 
     }
 
-     /*
+
 if ("net.minecraft.network.NetHandlerPlayServer".equals(transformedName)) {
+    //重写NetHandlerPlayServer来防止泰坦生物清空背包
       ClassNode craft = getClassNode(basicClass);
       label93: for (MethodNode methodNode : craft.methods) {
-
         System.out.println(methodNode.name + methodNode.desc);
         if ("dropAllItems".equals(methodNode.name)) {
           for (AbstractInsnNode node : methodNode.instructions.toArray()) {
@@ -79,8 +80,8 @@ if ("net.minecraft.network.NetHandlerPlayServer".equals(transformedName)) {
       }
       return getBytecode(craft);
     }
-     */
-    return basicClass;
+
+       return basicClass;
   }
 
 protected ClassNode getClassNode(byte[] bytes) {

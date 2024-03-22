@@ -57,6 +57,7 @@ public class RainbowLightingRender extends Render {
             d6 += (random1.nextInt(31) - 15);
           }
           tessellator.startDrawing(5);
+          //下面这段把参数设置为随机实现RGB闪电渲染
           tessellator.setColorRGBA_F(random1.nextFloat(), random1.nextFloat(), random1.nextFloat(), random1.nextFloat());
           double d9 = 0.1D + j * 0.2D;
           if (k == 0) {

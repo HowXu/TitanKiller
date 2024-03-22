@@ -8,6 +8,7 @@ import cpw.mods.fml.common.ModMetadata;
 import java.util.Arrays;
 
 public class TKContainer extends DummyModContainer {
+    //Coremod基本
     public TKContainer() {
       super(new ModMetadata());
       ModMetadata meta = getMetadata();

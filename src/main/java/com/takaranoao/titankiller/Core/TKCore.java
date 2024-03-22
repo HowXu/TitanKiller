@@ -5,6 +5,7 @@ import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
 import java.util.Map;
 
 public class TKCore implements IFMLLoadingPlugin {
+    //Coremod基本
     @Override
     public String[] getASMTransformerClass() {
         return new String[] { "com.takaranoao.titankiller.Core.TKTransformer" };

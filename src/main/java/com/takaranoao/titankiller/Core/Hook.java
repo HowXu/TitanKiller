@@ -10,6 +10,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Hook {
+    //hook方法重写泰坦生物的触发机制，这样不会被凋零斯拉的闪电秒杀
     public static List hook(List list) {
         if (list == null || list.isEmpty()) {
             return list;

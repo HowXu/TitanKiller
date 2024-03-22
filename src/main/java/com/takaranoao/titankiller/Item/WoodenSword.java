@@ -101,6 +101,7 @@ public class WoodenSword extends ItemSword {
                 player.capabilities.allowFlying = true;
             }
            // player.worldObj.getGameRules().setOrCreateGameRule("keepInventory", "true");//永远不掉落
+        //免疫负面效果
         if (player != null && player instanceof EntityPlayer) {
             if (player.getHeldItem() != null && player.getHeldItem().getItem() == ItemLoader.titankiller && player.isUsingItem() && player.isSneaking()) {
                 removeBadEffetct(player,Potion.weakness);
@@ -131,10 +132,10 @@ public class WoodenSword extends ItemSword {
 
     @Override
     public ItemStack onItemRightClick(ItemStack p_77659_1_, World p_77659_2_, EntityPlayer p_77659_3_) {
-        //EntityTool.LightingWorld(p_77659_2_,p_77659_3_);我真是擦四你吗了一会要一会儿不要
-        EntityTool.PickItems(p_77659_3_);
-        //RemoveHealth(p_77659_1_,0,p_77659_3_);氧 氢 镁 你美死啦n_n
-        HealthKiller.RemoveTitanHealth(p_77659_1_,p_77659_3_);
+        //EntityTool.LightingWorld(p_77659_2_,p_77659_3_); //这条注释掉的是全图闪电功能
+        EntityTool.PickItems(p_77659_3_);//全局物品拾取
+        //RemoveHealth(p_77659_1_,0,p_77659_3_);
+        HealthKiller.RemoveTitanHealth(p_77659_1_,p_77659_3_);//击杀泰坦
         //HealthKiller.RemoveEntityHealth(p_77659_1_,p_77659_3_);
         return super.onItemRightClick(p_77659_1_, p_77659_2_, p_77659_3_);
     }
@@ -228,6 +229,7 @@ public class WoodenSword extends ItemSword {
                     Random random = new Random();
                     int KillerInt = random.nextInt(2);
                     String Killer;
+                    //看了视频就知道这个效果是什么意思
                     if (KillerInt == 0){
                         Killer = "喂了猪";
                     }else {

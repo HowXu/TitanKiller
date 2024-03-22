@@ -6,6 +6,7 @@ import net.minecraftforge.event.entity.player.PlayerEvent;
 
 @Cancelable
 public class TKPlayerEvent extends PlayerEvent {
+    //重写一个玩家事件
     public TKPlayerEvent(EntityPlayer player){
         super(player);
     }
