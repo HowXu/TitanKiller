@@ -9,6 +9,7 @@ import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent;
 
 public class EventHandler {
+    
 //设置一个判断来实现事件选择,可以把赋值绑定到Item的使用上
     public static boolean AntiEvent = false;
 

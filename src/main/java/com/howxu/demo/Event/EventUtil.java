@@ -1,6 +1,5 @@
 package com.howxu.demo.Event;
 
-
 import java.util.Arrays;
 import java.util.Collections;
 
@@ -104,7 +103,7 @@ public class EventUtil {
     //重写post方法
     public static boolean post(EventBus bus,Event event){
         if (EventHandler.AntiEvent) {
-            return false;//设置一个事件全部取消
+            return false;//根据AntiEvent属性设置事件全部取消
         }
         IEventListener[] listeners = event.getListenerList().getListeners(bus.busID);
         int index = 0;
@@ -131,7 +130,7 @@ public class EventUtil {
                 if (entity instanceof EntityPlayer){
                     EntityPlayer player = (EntityPlayer) entity;
                     if(HasItemDemo(player)){
-                        player.worldObj.updateEntity(player);//同样的更新
+                        player.worldObj.updateEntity(player);//原版同样的更新
                         }
                     }
                 }
@@ -149,7 +148,7 @@ public class EventUtil {
                     if (entity instanceof EntityPlayer){
                         EntityPlayer player = (EntityPlayer) entity;
                         if(HasItemDemo(player)){
-                            player.worldObj.updateEntity(player);//同样的更新实体
+                            player.worldObj.updateEntity(player);//原版同样的更新实体
                         }
                         }
                     }
