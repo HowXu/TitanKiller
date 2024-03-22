@@ -20,6 +20,8 @@ import cpw.mods.fml.common.FMLLog;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.ModContainer;
 
+//通过冒名修改类的访问字段和方法实现绕过编译器检查
+
 public class EventBus implements IEventExceptionHandler
 {
     private static int maxID = 0;

@@ -51,6 +51,7 @@ public class ItemDemo extends ItemSword{
             EntityPlayer player = (EntityPlayer) p_77663_3_;
             if(player.posY <= -45.0D){
                 player.posY += 10D;//判断是否在-45以下，添加坐标（不是tp）
+                //无尽贪婪的虚空救援功能
             }
 
             //已经拿了Demo的玩家是否已经加入数组
@@ -93,7 +94,7 @@ public class ItemDemo extends ItemSword{
         //EventUtil.TimeStop = true;//右键时启动时间停止，但是我不推荐
 
 
-        //右键时监听，为true改为false，为false改为true
+        //右键时监听，为true改为false，为false改为true 时停功能
         if(EventUtil.TimeStop){
             EventUtil.TimeStop = false;
         }else if(!EventUtil.TimeStop){
@@ -139,12 +140,14 @@ public class ItemDemo extends ItemSword{
     @Override
     public EnumAction getItemUseAction(ItemStack p_77661_1_) {
 
-        return EnumAction.bow;//故名思义，返回物品蓄力动画    super.getItemUseAction(p_77661_1_)
+        return EnumAction.bow;//故名思义，返回物品蓄力动画    
+        //super.getItemUseAction(p_77661_1_)
     }
 
     @Override
     //检测实体挥动物品
     public boolean onEntitySwing(EntityLivingBase entityLiving, ItemStack stack) {
+    //穿越地形攻击 超长范围攻击
         Vec3 Vector = entityLiving.getLookVec();//获取实体朝向
         for(int i = 0 ; i  < 512/*攻击范围多大这个就多大 */;i++){
             double x = Vector.xCoord * i;

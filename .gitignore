@@ -1,5 +1,6 @@
 # 忽略运行文件夹
-/eclipse
+eclipse/
 
 # 忽略构建文件夹
 build/
+

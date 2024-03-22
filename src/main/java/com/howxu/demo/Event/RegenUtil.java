@@ -14,6 +14,7 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.ChunkProviderServer;
 
 public class RegenUtil {
+        //尝试地形复写功能
 
     public static void Regen(World world,int x,int z){
         IChunkProvider provider = world.getChunkProvider();//获得区块供应
