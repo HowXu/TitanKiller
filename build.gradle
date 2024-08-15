@@ -20,7 +20,7 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "2.0"
+version = "2.2"
 group= "com.takaranoao.titankiller" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "titankiller"
 
@@ -49,7 +49,7 @@ dependencies {
     // for more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
-
+    compile fileTree(dir:'libs',includes:['*jar'])
 }
 
 tasks.withType(JavaCompile){
