@@ -14,26 +14,32 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+        //classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT' //too old
+        classpath('com.anatawa12.forge:ForgeGradle:1.2-1.1.+') {
+            changing = true
+        }
     }
 }
 
 apply plugin: 'forge'
 
 version = "2.2"
-group= "com.takaranoao.titankiller" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group = "com.takaranoao.titankiller" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "titankiller"
 
 minecraft {
     version = "1.7.10-10.13.4.1614-1.7.10"
-    runDir = "eclipse"
+    runDir = "run"
 }
 
 repositories {
+    mavenCentral()
     maven {
-        name = "central"
-        url = "https://repo1.maven.org/maven2"
+        name = "forge"
+        //url = "http://files.minecraftforge.net/maven"
+        url = "https://maven.minecraftforge.net/"
     }
+    flatDir(dirs: "libs")
 }
 
 dependencies {
@@ -41,7 +47,7 @@ dependencies {
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"
     //compile "some.group:artifact:version"
-      
+
     // real examples
     //compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
     //compile 'com.googlecode.efficient-java-matrix-library:ejml:0.24' // adds ejml to the dev env
@@ -49,35 +55,37 @@ dependencies {
     // for more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
-    compile fileTree(dir:'libs',includes:['*jar'])
+    //compile fileTree(dir: 'libs', includes: ['*jar'])
+    implementation files('libs/Thetitans-1.7.10-0.495-deobf.jar')
 }
 
-tasks.withType(JavaCompile){
-    options.encoding="UTF-8"
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
 }
 
 processResources
-{
-    // this will ensure that this task is redone when the versions change.
-    inputs.property "version", project.version
-    inputs.property "mcversion", project.minecraft.version
+        {
+            // this will ensure that this task is redone when the versions change.
+            inputs.property "version", project.version
+            inputs.property "mcversion", project.minecraft.version
 
-    // replace stuff in mcmod.info, nothing else
-    from(sourceSets.main.resources.srcDirs) {
-        include 'mcmod.info'
-                
-        // replace version and mcversion
-        expand 'version':project.version, 'mcversion':project.minecraft.version
-    }
-        
-    // copy everything else, thats not the mcmod.info
-    from(sourceSets.main.resources.srcDirs) {
-        exclude 'mcmod.info'
-    }
-}
+            // replace stuff in mcmod.info, nothing else
+            from(sourceSets.main.resources.srcDirs) {
+                include 'mcmod.info'
 
-jar{
-    manifest{
-        attributes(["FMLCorePlugin" : "com.takaranoao.titankiller.Core.TKCore", "FMLCorePluginContainsFMLMod" : true])
+                // replace version and mcversion
+                expand 'version': project.version, 'mcversion': project.minecraft.version
+            }
+
+            // copy everything else, thats not the mcmod.info
+            from(sourceSets.main.resources.srcDirs) {
+                exclude 'mcmod.info'
+            }
+        }
+
+//For core mod
+jar {
+    manifest {
+        attributes(["FMLCorePlugin": "com.takaranoao.titankiller.Core.TKCore", "FMLCorePluginContainsFMLMod": true])
     }
 }

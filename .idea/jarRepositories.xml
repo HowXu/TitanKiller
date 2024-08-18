@@ -26,5 +26,10 @@
       <option name="name" value="forge" />
       <option name="url" value="https://maven.minecraftforge.net" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="forge2" />
+      <option name="name" value="forge2" />
+      <option name="url" value="https://maven.minecraftforge.net/" />
+    </remote-repository>
   </component>
 </project>

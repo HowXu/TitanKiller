@@ -9,6 +9,7 @@ public class TKCore implements IFMLLoadingPlugin {
     @Override
     public String[] getASMTransformerClass() {
         return new String[] { "com.takaranoao.titankiller.Core.TKTransformer" };
+        //com.takaranoao.titankiller.Core.MCTransformer 降智操作
     }
 
     @Override

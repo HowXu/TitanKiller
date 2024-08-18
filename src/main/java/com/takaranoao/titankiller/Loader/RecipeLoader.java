@@ -7,6 +7,6 @@ import net.minecraft.item.ItemStack;
 
 public class RecipeLoader {
     public RecipeLoader(FMLInitializationEvent e){
-        GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.titankiller),new Object[]{" L ","LXL"," L ",'L',Items.nether_star,'X', Items.wooden_sword});
+        GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.titankiller), " L ","LXL"," L ",'L',Items.nether_star,'X', Items.wooden_sword);
     }
 }

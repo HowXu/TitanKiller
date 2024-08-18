@@ -31,7 +31,7 @@ public class HealthKiller {
                 Entity entity2 = entitylist.get(i);
                 if (entity2 instanceof EntityTitanSpirit)
                 {
-                    ((EntityTitanSpirit)entity2).setDead();
+                    entity2.setDead();
                 }
             }
         }
@@ -39,7 +39,7 @@ public class HealthKiller {
         double dx = vec3.xCoord * 6.0D;
         double dy = player.getEyeHeight() + vec3.yCoord * 6.0D;
         double dz = vec3.zCoord * 6.0D;
-        List<Entity> list3 = player.worldObj.getEntitiesWithinAABBExcludingEntity((Entity)player, player.boundingBox.expand(50.0D, 50.0D, 50.0D).offset(dx, dy, dz));
+        List<Entity> list3 = player.worldObj.getEntitiesWithinAABBExcludingEntity(player, player.boundingBox.expand(50.0D, 50.0D, 50.0D).offset(dx, dy, dz));
 
         List<Entity> list1 = new ArrayList<Entity>(player.worldObj.loadedEntityList);
         if (list1 != null && !list1.isEmpty())
@@ -67,7 +67,7 @@ public class HealthKiller {
         double dx1 = vec3.xCoord * 4.0D;
         double dy1 = player.getEyeHeight() + vec3.yCoord * 4.0D;
         double dz1 = vec3.zCoord * 4.0D;
-        List<Entity> list11 = player.worldObj.getEntitiesWithinAABBExcludingEntity((Entity)player, player.boundingBox.expand(4.0D, 4.0D, 4.0D).offset(dx1, dy1, dz1));
+        List<Entity> list11 = player.worldObj.getEntitiesWithinAABBExcludingEntity(player, player.boundingBox.expand(4.0D, 4.0D, 4.0D).offset(dx1, dy1, dz1));
         if (list11 != null && !list11.isEmpty())
         {
             for (int I = 0; I < list11.size(); I++) {
@@ -115,7 +115,7 @@ public class HealthKiller {
         double dx = vec3.xCoord * 6.0D;
         double dy = player.getEyeHeight() + vec3.yCoord * 6.0D;
         double dz = vec3.zCoord * 6.0D;
-        List<Entity> list1 = player.worldObj.getEntitiesWithinAABBExcludingEntity((Entity)player, player.boundingBox.expand(6.0D, 6.0D, 6.0D).offset(dx, dy, dz));
+        List<Entity> list1 = player.worldObj.getEntitiesWithinAABBExcludingEntity(player, player.boundingBox.expand(6.0D, 6.0D, 6.0D).offset(dx, dy, dz));
         if (list1 != null && !list1.isEmpty())
         {
             for (int i11 = 0; i11 < list1.size(); i11++) {
@@ -125,7 +125,7 @@ public class HealthKiller {
                         //entity1.motionY++;让子弹飞
                     }
                     try {
-                        ReflectionHelper.findField(EntityLivingBase.class, new String[] { "recentlyHit", "field_70718_bc" }).setInt(entity1, 100);
+                        ReflectionHelper.findField(EntityLivingBase.class, "recentlyHit", "field_70718_bc").setInt(entity1, 100);
                     }
                     catch (Exception exception) {}
                     //设置生物的血量和定义上的死亡，but会抽搐

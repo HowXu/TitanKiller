@@ -15,7 +15,7 @@ public class TKContainer extends DummyModContainer {
       meta.modId = "titankillercore";
       meta.name = "TitanKillerCore";
       meta.version = "2.0.0";
-      meta.authorList = Arrays.asList(new String[] { "Takaranoao" });
+      meta.authorList = Arrays.asList("Takaranoao");
       meta.description = "A Core Mod for TitanKiller";
     }
 

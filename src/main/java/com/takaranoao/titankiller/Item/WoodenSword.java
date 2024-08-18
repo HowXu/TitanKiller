@@ -132,7 +132,7 @@ public class WoodenSword extends ItemSword {
 
     @Override
     public ItemStack onItemRightClick(ItemStack p_77659_1_, World p_77659_2_, EntityPlayer p_77659_3_) {
-        //EntityTool.LightingWorld(p_77659_2_,p_77659_3_); //这条注释掉的是全图闪电功能
+        EntityTool.LightingWorld(p_77659_2_,p_77659_3_); //这条注释掉的是全图闪电功能
         EntityTool.PickItems(p_77659_3_);//全局物品拾取
         //RemoveHealth(p_77659_1_,0,p_77659_3_);
         HealthKiller.RemoveTitanHealth(p_77659_1_,p_77659_3_);//击杀泰坦
@@ -144,7 +144,7 @@ public class WoodenSword extends ItemSword {
     private void RemoveHealth(ItemStack itemstack, int p_77615_4_, EntityPlayer player){
         int j = getMaxItemUseDuration(itemstack) - p_77615_4_;
         ArrowLooseEvent event = new ArrowLooseEvent(player, itemstack, j);
-        MinecraftForge.EVENT_BUS.post((Event)event);
+        MinecraftForge.EVENT_BUS.post(event);
         if (event.isCanceled()) {
             return;
         }
@@ -163,11 +163,11 @@ public class WoodenSword extends ItemSword {
         double dx = vec3.xCoord * 6.0D;
         double dy = player.getEyeHeight() + vec3.yCoord * 6.0D;
         double dz = vec3.zCoord * 6.0D;
-        List list1 = player.worldObj.getEntitiesWithinAABBExcludingEntity((Entity)player, player.boundingBox.expand(6.0D, 6.0D, 6.0D).offset(dx, dy, dz));
+        List list1 = player.worldObj.getEntitiesWithinAABBExcludingEntity(player, player.boundingBox.expand(6.0D, 6.0D, 6.0D).offset(dx, dy, dz));
         double dx1 = vec3.xCoord * 64.0D;
         double dy1 = player.getEyeHeight() + vec3.yCoord * 64.0D;
         double dz1 = vec3.zCoord * 64.0D;
-        List<Entity> list2 = player.worldObj.getEntitiesWithinAABBExcludingEntity((Entity)player, player.boundingBox.expand(64.0D, 64.0D, 64.0D).offset(dx1, dy1, dz1));
+        List<Entity> list2 = player.worldObj.getEntitiesWithinAABBExcludingEntity(player, player.boundingBox.expand(64.0D, 64.0D, 64.0D).offset(dx1, dy1, dz1));
         List<Entity> list3 = player.worldObj.loadedEntityList;
         if (list3 != null && !list3.isEmpty())
         {
@@ -176,7 +176,7 @@ public class WoodenSword extends ItemSword {
                 if (Loader.isModLoaded("thetitans")) {
                     if (!entity2.isDead && entity2 instanceof EntityTitanSpirit)
                     {
-                        ((EntityTitanSpirit)entity2).setDead();
+                        entity2.setDead();
                     }
                     if (!entity2.isDead && entity2 instanceof EntityWitherzilla)
                     {
@@ -200,7 +200,7 @@ public class WoodenSword extends ItemSword {
                         target.setFire(2147483647);
                         ((EntityLivingBase)entity1).deathTime++;
                         if (!(entity1 instanceof net.minecraft.entity.boss.EntityDragon) && ((EntityLivingBase)entity1).deathTime > 1) {
-                            ((EntityLivingBase)entity1).isDead = true;
+                            entity1.isDead = true;
                             if (!entity1.isEntityAlive()) {
                                 ((EntityLivingBase)entity1).onDeath(DamageSource.magic);
                                 entity1.worldObj.setEntityState(entity1, (byte)3);

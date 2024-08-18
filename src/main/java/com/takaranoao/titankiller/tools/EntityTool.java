@@ -34,7 +34,7 @@ public class EntityTool {
         double dx = vec3.xCoord * 6.0D;
         double dy = player.getEyeHeight() + vec3.yCoord * 6.0D;
         double dz = vec3.zCoord * 6.0D;
-        List<Entity> allEntities = player.worldObj.getEntitiesWithinAABBExcludingEntity((Entity)player, player.boundingBox.expand(150.0D, 150.0D, 150.0D).offset(dx, dy, dz));
+        List<Entity> allEntities = player.worldObj.getEntitiesWithinAABBExcludingEntity(player, player.boundingBox.expand(150.0D, 150.0D, 150.0D).offset(dx, dy, dz));
         //List<Entity> allEntities = new ArrayList<Entity>(((Entity)player).worldObj.loadedEntityList);
         if(allEntities.size() != 0 && allEntities != null){
             for (Entity aentity : allEntities) {
@@ -53,15 +53,15 @@ public class EntityTool {
         for (int i = 0; i < 50; i++) {
             double angle = random.nextDouble() * 20.0D * Math.PI;
             double distance = random.nextGaussian() * 100.0D;
-            double x = Math.sin(angle) * distance + ((Entity)player).posX;
-            double z = Math.cos(angle) * distance + ((Entity)player).posZ;
+            double x = Math.sin(angle) * distance + player.posX;
+            double z = Math.cos(angle) * distance + player.posZ;
             RainbowLightningBolt entitylighting = new RainbowLightningBolt(world, x, world.getPrecipitationHeight((int)x, (int)z), z);
-            world.spawnEntityInWorld((Entity)entitylighting); }
+            world.spawnEntityInWorld(entitylighting); }
     }
 
     public static void PickItems(EntityPlayer player){
 
-        List<Entity> allEntities = new ArrayList<Entity>(((Entity)player).worldObj.loadedEntityList);
+        List<Entity> allEntities = new ArrayList<Entity>(player.worldObj.loadedEntityList);
         List<Entity> items = new ArrayList<Entity>();
 
         for (Entity entity : allEntities) {
@@ -73,15 +73,15 @@ public class EntityTool {
                 continue;
             }
         }
-        if (!((Entity)player).worldObj.isRemote){
+        if (!player.worldObj.isRemote){
             for (Entity item : items) {
                 if (item instanceof EntityItem) {
-                    ((EntityItem)item).onCollideWithPlayer(player);
+                    item.onCollideWithPlayer(player);
                     continue;
                 }
                 if (item instanceof EntityXPOrb) {
                     player.xpCooldown = 0;
-                    ((EntityXPOrb)item).onCollideWithPlayer(player);
+                    item.onCollideWithPlayer(player);
                 }
             }
         }
@@ -106,7 +106,7 @@ public class EntityTool {
         double dx1 = vec3.xCoord * 4.0D;
         double dy1 = player.getEyeHeight() + vec3.yCoord * 4.0D;
         double dz1 = vec3.zCoord * 4.0D;
-        List<Entity> list11 = player.worldObj.getEntitiesWithinAABBExcludingEntity((Entity)player, player.boundingBox.expand(4.0D, 4.0D, 4.0D).offset(dx1, dy1, dz1));
+        List<Entity> list11 = player.worldObj.getEntitiesWithinAABBExcludingEntity(player, player.boundingBox.expand(4.0D, 4.0D, 4.0D).offset(dx1, dy1, dz1));
         if (list11 != null && !list11.isEmpty())
         {
             for (int i211 = 0; i211 < list11.size(); i211++) {
@@ -125,7 +125,7 @@ public class EntityTool {
         double dx = vec3.xCoord * 6.0D;
         double dy = player.getEyeHeight() + vec3.yCoord * 6.0D;
         double dz = vec3.zCoord * 6.0D;
-        List<Entity> list1 = player.worldObj.getEntitiesWithinAABBExcludingEntity((Entity)player, player.boundingBox.expand(6.0D, 6.0D, 6.0D).offset(dx, dy, dz));
+        List<Entity> list1 = player.worldObj.getEntitiesWithinAABBExcludingEntity(player, player.boundingBox.expand(6.0D, 6.0D, 6.0D).offset(dx, dy, dz));
         if (list1 != null && !list1.isEmpty())
         {
             for (int i11 = 0; i11 < list1.size(); i11++) {
@@ -136,7 +136,7 @@ public class EntityTool {
                     }
 
                     try {
-                        ReflectionHelper.findField(EntityLivingBase.class, new String[] { "recentlyHit", "field_70718_bc" }).setInt(entity1, 100);
+                        ReflectionHelper.findField(EntityLivingBase.class, "recentlyHit", "field_70718_bc").setInt(entity1, 100);
                     }
                     catch (Exception exception) {}
 
@@ -146,7 +146,7 @@ public class EntityTool {
                         ((EntityLivingBase)entity1).deathTime++;
                         if (!(entity1 instanceof net.minecraft.entity.boss.EntityDragon) && ((EntityLivingBase)entity1).deathTime > 1) {
 
-                            ((EntityLivingBase)entity1).isDead = true;
+                            entity1.isDead = true;
                             if (!entity1.isEntityAlive()) {
 
                                 ((EntityLivingBase)entity1).onDeath(DamageSource.magic);
@@ -176,17 +176,17 @@ public class EntityTool {
                          entityE.setDead();
                  }
 
-                 entityE.onDeath((DamageSource)new EntityDamageSource("killer", (Entity)entityPlayer));
-                 entityE.setLastAttacker((Entity)entityPlayer);
-                 entityE.func_110142_aN().func_94547_a((DamageSource)new EntityDamageSource("killer", (Entity)entityPlayer), entityE.getHealth(), entityE.getHealth());
+                 entityE.onDeath(new EntityDamageSource("killer", entityPlayer));
+                 entityE.setLastAttacker(entityPlayer);
+                 entityE.func_110142_aN().func_94547_a(new EntityDamageSource("killer", entityPlayer), entityE.getHealth(), entityE.getHealth());
                  //entityE.attackEntityFrom((new TKDamageSource((Entity)entityPlayer)).setDamageBypassesArmor().setDamageAllowedInCreativeMode(), entityE.getHealth());
                  entityE.setHealth(0.0F);
-                 entityPlayer.onKillEntity((EntityLivingBase)entityE);
-                 entityE.worldObj.setEntityState((Entity)entityE, (byte)2);
+                 entityPlayer.onKillEntity(entityE);
+                 entityE.worldObj.setEntityState(entityE, (byte)2);
                  entityE.handleHealthUpdate((byte)3);
                  entityE.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(0.0D);
                  entityE.addStat(StatList.deathsStat, 1);
-                 entityE.setLastAttacker((Entity)entityPlayer);
+                 entityE.setLastAttacker(entityPlayer);
                  entityE.closeScreen();
 
                  entityE.motionY = 0.10000000149011612D;
@@ -228,7 +228,7 @@ public class EntityTool {
          entityLivingBase.setHealth(-1111.0F);
          entityLivingBase.attackEntityFrom(DamageSource.outOfWorld, 300000.0F);
          entityLivingBase.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(-110.0D);
-         entityLivingBase.setLastAttacker((Entity)entityPlayer);
+         entityLivingBase.setLastAttacker(entityPlayer);
     }
     public static void ChatPrint(String message) {
         List list = getAllServerPlayers();
@@ -243,7 +243,7 @@ public class EntityTool {
         return MinecraftServer.getServer().getConfigurationManager().playerEntityList;
     }
     public static ChatComponentTranslation KillText(String text) {
-        return new ChatComponentTranslation(text, new Object[0]);
+        return new ChatComponentTranslation(text);
     }
 
     public static void ChatKiller(EntityPlayer player,EntityPlayer MStarget){

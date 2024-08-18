@@ -75,7 +75,7 @@ public class RefuseEvent {
         //一般的防抢夺，只在玩家更新时才可以生效
             if (event.entityLiving != null && event.entityLiving instanceof EntityPlayer){
             EntityPlayer player = (EntityPlayer)event.entityLiving;
-            List<Entity> list = player.worldObj.getEntitiesWithinAABBExcludingEntity((Entity)player, player.boundingBox.expand(2.0D, 2.0D, 2.0D));
+            List<Entity> list = player.worldObj.getEntitiesWithinAABBExcludingEntity(player, player.boundingBox.expand(2.0D, 2.0D, 2.0D));
 
           if (list != null && !list.isEmpty()) {
             for (int i = 0; i < list.size(); i++) {
@@ -123,7 +123,7 @@ public class RefuseEvent {
         }
         if (player.getEntityData().getInteger("know") == 3) {
             if(player.worldObj.isRemote){//设置单端监听
-            player.addChatMessage((IChatComponent)new ChatComponentText("一个奇怪的力量要把木剑夺走，这时木剑上的牙印亮了一下，什么都没有发生"));
+            player.addChatMessage(new ChatComponentText("一个奇怪的力量要把木剑夺走，这时木剑上的牙印亮了一下，什么都没有发生"));
             //this.know = 0;
             player.getEntityData().setInteger("know",0);
             System.out.println("FAnsgjaidsqo"+player.getEntityData().getInteger("know"));

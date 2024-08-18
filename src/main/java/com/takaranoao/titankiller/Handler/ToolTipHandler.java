@@ -22,14 +22,13 @@ public class ToolTipHandler {
                 String AttackDamage = StatCollector.translateToLocal("attribute.name.generic.attackDamage");
 
                 if(thetooltip.contains(AttackDamage) || thetooltip.contains(StatCollector.translateToLocal(AttackDamage))){
-                    StringBuilder Builder = new StringBuilder();
-                    Builder.append(EnumChatFormatting.BLUE);
-                    Builder.append("+");
-                    Builder.append(RainbowText.makeRainbow("无限"));
-                    Builder.append(" ");
-                    Builder.append(EnumChatFormatting.BLUE);
-                    Builder.append(AttackDamage);
-                    event.toolTip.set(i,Builder.toString());
+                    String Builder = EnumChatFormatting.BLUE +
+                            "+" +
+                            RainbowText.makeRainbow("无限") +
+                            " " +
+                            EnumChatFormatting.BLUE +
+                            AttackDamage;
+                    event.toolTip.set(i, Builder);
                 }
             }
 
